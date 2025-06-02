@@ -1,4 +1,3 @@
-// src/commands/ChangePasswordCommand.ts
 import { Command } from "./command";
 import { handleChangePassword } from "../services/password.service";
 import { User } from "../models/user.model";
