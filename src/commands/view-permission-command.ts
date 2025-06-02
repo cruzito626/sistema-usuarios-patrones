@@ -2,7 +2,7 @@ import { Command } from "./command";
 import { handlePermissions } from "../services/permission.service";
 import { User } from "../models/user.model";
 
-export class ViewPermissionsCommand implements Command<User | null> {
+export class ViewPermissionsCommand implements Command {
     async execute(currentUser: User | null): Promise<User | null> {
         if (!currentUser) {
             console.log("⚠️ Debes iniciar sesión primero.");

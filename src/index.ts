@@ -17,12 +17,12 @@ import { ChangePasswordCommand } from "./commands/change-password-command";
 import { DeactivateAccountCommand } from "./commands/deactivate-command";
 import { ViewPermissionsCommand } from "./commands/view-permission-command";
 
-const commandsMap: Record<string, Command<User | null>> = {
+const commandsMap: Record<string, Command> = {
 	"1. Registrar usuario": new RegisterCommand(),
 	"2. Iniciar sesión": new LoginCommand(),
 	"3. Cerrar sesión": new LogoutCommand(),
 	"4. Cambiar contraseña": new ChangePasswordCommand(),
-	"5. Ver roles y permisos": new ViewPermissionsCommand(),
+	"5. validar permisos": new ViewPermissionsCommand(),
 	"6. Eliminar/Desactivar cuenta": new DeactivateAccountCommand(),
 
 };
